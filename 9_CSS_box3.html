@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 100px;
+            display: inline-block; /*한줄에 표현*/
+            margin: 15px; /*박스 사이가 30px 떨어져있음*/
+            border: 1px solid blue;
+            border-radius: 20px;
+        }
+        .box1{
+            box-shadow: 2px 2px 5px 0; /*시계방향(t-r-b-l)으로*/
+        }
+        .box2{
+            box-shadow: 5px 5px 15px 5px blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 100px;
+            display: inline-block;
+            margin: 15px;
+            background-color: #ffd800;
+            border: 2px solid #222
+        }
+        .round1{
+            border-radius: 50px/30px; /*네변이 같을 때*/
+        } 
+        .round2{
+            border-bottom-right-radius: 50% 30%
+        }      
+        .round3{
+            border-top-left-radius: 50px 30px;
+        }
+        .round4{
+            border-bottom-left-radius: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="round1"></div>
+    <div class="round2"></div>
+    <div class="round3"></div>
+    <div class="round4"></div>
+</body>
+</html>

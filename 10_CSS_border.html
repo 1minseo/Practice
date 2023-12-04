@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>박스모델</title>
+    <style>
+        div{
+            width: 200px;
+            height: 100px;
+            display: inline-block;
+            margin: 15px;
+            text-align: center;
+            font-size: 20px;
+            border-style: solid;
+        }
+        .box1{border-width: 2px; /*네방향 모두 2px*/
+              border-width: 2px;
+              border-color: red;
+        } 
+        .box2{border-width: thick thin; /*thick이 top/bottom, thin이 left/right*/
+              border-color: blue;
+              border-left-color: red;
+        }      
+        .box3{border-width: thick thin thin;} /*1:thick, 2:left/right, 3:thin*/
+        .box4{border-width: 10px 5px 10px 5px;} /*시계방향으로*/
+        h1{
+            padding-bottom: 5px;
+            border-bottom: 3px double blue;
+        }
+        p{
+            padding: 10px;
+            border: 3px dotted blue;
+            border-radius: 5%;
+        }
+        .circle{
+            border-radius: 50%; /*% 대신 px 가능. 클수록 둥근 모양*/
+        }
+        #round1{
+            border: 2px solid blue;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">실선 테두리</div>
+    <div class="box2">점선 테두리</div>
+    <div class="box3">점선 테두리</div>
+    <div class="box4">점선 테두리</div>
+
+    <h1>박스 모델</h1>
+    <p>박스 모델은 실제 콘텐츠 영역, 박스와 콘텐츠 영역 사이의 여백인 패딩, 박스의 테두리 그리고 여러 박스 모델간의 여백인 마진 등의 요소로 구성되어 있습니다.</p>
+    
+    <img src="img/cat.jpg">
+    <image class="circle" src="img/cat.jpg">
+    <div id="round1"></div>
+</body>
+</html>

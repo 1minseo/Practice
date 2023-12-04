@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS</title>
+    <style>
+        .book1 {
+            list-style-type: none;
+        }
+        .boo2 {
+            list-style-type: upper-alpha; /*알파벳 대문자 순으로*/
+        }
+        .book3 {
+            list-style-image: url('img/dot.png'); /*이미지도 넣을 수 있음*/
+        }
+        .inside{
+            list-style-position: inside; /*위치 inside, outside*/
+        }
+    </style>
+</head>
+<body>
+    <h1>도서 시리즈</h1>
+    <ul class="book1">
+        <li>Do it! 시리즈</li>
+        <li>된다 시리즈</li>
+        <li>첫 코딩 시리즈</li>
+    </ul>
+    <ol class="book2">
+        <li>Do it! 시리즈</li>
+        <li>된다 시리즈</li>
+        <li>첫 코딩 시리즈</li>
+    </ol>
+    <h1>블릿 이미지 사용</h1>
+    <ul class="book3">
+        <li>Do it! 시리즈</li>
+        <li>된다 시리즈</li>
+        <li>첫 코딩 시리즈</li>
+    </ul>
+    <ul class="inside">
+        <li>Do it! 시리즈</li>
+        <li>된다 시리즈</li>
+        <li>첫 코딩 시리즈</li>
+    </ul>
+</body>
+</html>

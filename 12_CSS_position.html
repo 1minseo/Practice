@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            width: 500px;
+            height: 200px;
+            background-color: #eee;
+            border: 1px solid #ccc;
+            line-height: 2;
+        }
+        #static{ /*아이디는 #으로 표시*/
+            position: static; /*static: 순서대로(기본값)*/
+        }    
+        #relative-1{
+            position: relative; /*relative: 소스 작성 순서대로 배치되고 위치값 지정 가능*/
+        }
+        #relative-2{
+            position: relative;
+            left: 100px;
+            top: -50px;
+        }
+        #fixed{
+            width: 100px;
+            height: 100px;
+            background-color: #222;
+            position: fixed; /*위치 고정*/
+            right: 30px;
+            top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <p id="static">Lorem Ipsum is simply dummy text of the printing andtypesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p>
+    <p id="relative-1">printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining</p>
+    <p id="relative-2">It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    <p id="fixed"></p>
+</body>
+</html>

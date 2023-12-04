@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+      div{
+        margin-bottom: 20px;
+      }
+      .box1{
+        width: 20px;
+        height: 100px;
+        padding: 20px;
+        border: 10px solid #ccc;
+      }
+      .box2{
+        box-sizing: border-box; /*값을 자동으로 계산해서 넣어줌*/
+        width: 200px; /*box1과 값은 같지만 자동으로 작게 맞춰짐*/
+        height: 100px;
+        padding: 20px;
+        border: 10px solid blue;
+      }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+</html>
