@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>홀수 짝수</title>
+    <script>
+        function evenOdd(){
+            const numTag = document.getElementById('num');
+            const numStr = numTag.value;
+            const num = Number(numStr);
+            const resTag = document.getElementById('result');
+
+            if (num % 2 == 0) {
+                resTag.innerHTML = '<h4>짝수입니다.</h4>';
+            } else {
+                resTag.innerHTML = '<h4>홀수입니다.</h4>';
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="num" placeholder="정수를 넣어라">
+    <button onclick="evenOdd()">확인</button>
+    <br>
+    <p id="result"></p>
+</body>
+</html>

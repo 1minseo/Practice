@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>자바스크립트</title>
+    <style>
+        body{text-align: center;}
+        h1{color: blue;}
+    </style>
+</head>
+<body>
+    <h1>간단한 입출력 방법</h1>
+    <script>
+        var name = prompt("이름을 입력하세요");
+        document.write("<b><big>" + name + "</b></big>님, 환영합니다.") /*bold+big 글씨체*/
+
+        let number=10;
+        
+        alert(number++)
+        alert(++number) /*경고창. ++가 앞에 붙으면 11부터 뜸*/
+        alert(number--)
+        alert(--number) /*10->12->12->10*/
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+</head>
+<body>
+    <script>
+        // switch(자료){
+        //     case 조건 A:
+        //         break
+        //     case 조건 B:
+        //         break
+        //     default:
+        //         break        
+        // }
+
+        const date = new Date()
+        const hour = date.getHours() /*시간을 가져오는 함수*/
+
+        switch(true){
+            case hour<11:
+                alert("아침 먹을 시간입니다.")
+                break
+            case hour<15:
+                alert("점심 먹을 시간입니다.")
+                break
+            default:
+                alert("저녁 먹을 시간입니다.")
+                break 
+        }
+
+        // const input=Number(prompt("숫자를 입력하세요", "숫자"))
+        // switch(input % 2){
+        //     case 0:
+        //         alert("짝수입니다.")
+        //         break
+        //     case 1:
+        //         alert("홀수입니다.")    
+        //     default:
+        //         alert("숫자가 아닙니다.") /*둘 다 아닌 경우*/
+        //         break    
+        // }
+    </script>
+</body>
+</html>

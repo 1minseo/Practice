@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body{text-align: center;}
+        h1{color: blue;}
+    </style>
+</head>
+<body>
+    <h1>오전오후 알림</h1>
+    <script>
+        const date = new Date()
+        const hour = date.getHours() /*시간을 가져오는 함수*/
+
+        if(hour<11) {
+            alert("아침 먹을 시간입니다.")
+        } else if(hour<15) {
+            alert("점심 먹을 시간입니다.")
+        } else {
+          alert("저녁 먹을 시간입니다.")
+        }
+    </script>
+</body>
+</html>

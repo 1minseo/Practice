@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        function score(){
+            const mid=Number(document.getElementById('mid').value); /*mid는 아이디가 아닌 변수명*/
+            const final=Number(document.getElementById('final').value);
+            const report=Number(document.getElementById('report').value);
+            const average=mid*0.3 + final*0.5 + report*0.2;
+            const avgTag=document.getElementById('average');
+            avgTag.innerHTML = average;
+
+            let grade; /*학점을 넣어줄 변수*/
+            switch(parseInt(average / 10)){
+                case 10:
+                case 9:
+                    grade='A';
+                    break;
+                case 8:
+                    grade='B';
+                    break;
+                case 7:
+                    grade='C';
+                    break;
+                case 6:
+                    grade='D';
+                    break; 
+                default:
+                    grade='F';       
+                }
+                const gradeTag=document.getElementById('grade');
+                gradeTag.innerHTML = grade;
+            }
+    </script>
+    <style>
+        td{text-align: center;}
+    </style>
+</head>
+<body style="margin: 50px;">
+    <table>
+        <tr>
+            <td>중간고사 : </td>
+            <td><input type="text" id="mid" placeholder="100점만점으로 입력하시오."></td>
+        </tr>
+        <tr>
+            <td>기말고사 : </td>
+            <td><input type="text" id="final" placeholder="100점만점으로 입력하시오."></td>
+        </tr>
+        <tr>
+            <td>과제 : </td>
+            <td><input type="text" id="report" placeholder="100점만점으로 입력하시오."></td>
+        </tr>
+        <tr>
+            <td colspan="2"><button onclick="score()">학점계산</button></td>
+        </tr>
+        <tr>
+            <td>가중평균 : </td>
+            <td id="average"></td>
+        </tr>
+        <tr>
+            <td>학점 : </td>
+            <td id="grade"></td>
+        </tr>
+    </table>
+</body>
+</html>
