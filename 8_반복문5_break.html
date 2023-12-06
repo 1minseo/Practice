@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>주사위 던지기</title>
+</head>
+<body>
+    <script>
+        // let cumSum = 0; //초기화. break문을 쓴 경우
+        // while(true){
+        //     const dice=Math.ceil(Math.random()*6)
+        //     //console.log(dice)
+        //     cumSum += dice
+        //     if(cumSum > 30) //합이 30을 넘으면 반복문 종료
+        //     break;
+        // }
+        // console.log(cumSum);
+
+        let cumSum = 0; //초기화. break문을 안 쓴 경우
+        while(cumSum<=30){
+            const dice=Math.ceil(Math.random()*6) //주사위를 굴려 나온 수를 변수 dice에 저장
+            console.log(dice)
+            cumSum += dice //나온 수를 누적하여 합계에 추가
+        }
+        console.log(cumSum);
+    </script>
+</body>
+</html>

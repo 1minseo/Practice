@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // for(const 반복변수 in 배열 또는 객체){
+
+        // }
+
+        // const todos=['우유사기','메일확인하기','수업듣기'];
+
+        // <enhanced for-loop>
+        // for (const i in todos){
+        //     console.log(`${i}번째 할일은 : ${todos[i]}입니다.`)
+        // }
+
+        // <기본반복문>
+        // for(let i=0; i<todos.length; i++){
+        //     console.log(`${i}번째 할일은 : ${todos[i]}입니다.`)
+        // }
+
+        let sum = 0; //변수 초기화 후 for문 돌리기
+        for(let i = 1; i <= 100; i++){ //i가 1부터 100까지 증가하도록 반복
+            sum+=i; //각 반복에서 sum변수에 i값을 더함
+        }
+        console.log(`1부터 100까지 더하면 ${sum}입니다.`)
+    </script>
+</body>
+</html>

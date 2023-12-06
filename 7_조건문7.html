@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const input=prompt("숫자를 입력하세요","")
+        const endNum=input[input.length - 1]
+
+        // 조건문-0이상이면 0이상의 숫자입니다. 0이하면 0이하의 숫자입니다.
+        // const result=(number>=0) ? '0이상의 숫자입니다.': '0이하의 숫자입니다.'
+        // alert(result)
+
+        // true || console.log("실행될까?1") //참일 경우 우변의 글을 무시//
+        // false || console.log("실행될까?2") //우변이 참인지 검사//
+
+        // true && console.log("실행될까?3") //이것만 실행됨//
+        // false && console.log("실행될까?4")
+        
+        if(endNum==="0"||
+           endNum==="2"||
+           endNum==="4"||
+           endNum==="6"||
+           endNum==="8"){
+            alert(`${input}은 짝수입니다.`) //alert: 경고문//
+        } else {
+            alert(`${input}은 홀수입니다.`)
+        }
+    </script>
+</body>
+</html>

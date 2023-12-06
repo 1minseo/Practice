@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>별(*)을 사용해 삼각형 모양 만들기</title>
+</head>
+<body>
+    <script>
+        // let output=''; //변수 할당 후 초기화. 초기값으로 빈 문자열('')을 할당
+        // for(let i=1; i<10; i++){ //i를 하나씩 증가.i값이 1부터 9까지 변화
+        //     for(let j=0; j<i; j++){
+        //         output +="*"; //별(*) 추가
+        //     }
+
+        //     //console.log(i)
+        //     output+= '\n'; //줄 바꿈 문자를 추가해 삼각형 모양 만들기
+        // }
+        // console.log(output); //결과를 출력
+
+       let output="" //초기화
+       for(let i=1; i<15; i++){
+        for(let j=15; j>i; j--){ //공백을 담당하는 for문
+            output += ""
+        }
+        for(let k=0; k<2*i-1; k++){
+            output += "*"
+        }
+        output += '\n'  
+       }
+    console.log(output)
+    </script>
+</body>
+</html>

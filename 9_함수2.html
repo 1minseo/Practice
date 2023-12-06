@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 두 수를 입력받아서 사이값을 모두 더하는 함수 1~100=5050, 1~500=12520
+        // 리턴값
+
+        function sumAll(a,b){
+            let output=0;
+            for(let i=a; i<=b, 1++){
+                output+=i;
+            }
+            return output
+        }
+        console.log(`입력받은 두 수 사이의 합은 ${sumAll(1,100)}`)
+        console.log(`입력받은 두 수 사이의 합은 ${sumAll(1,500)}`)
+    </script>
+</body>
+</html>
