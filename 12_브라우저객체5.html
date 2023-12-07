@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        if(navigator.userAgent.toLowerCase().indexOf('chrome')>=0)
+        alert('chrome 브라우저를 사용하고 있습니다.')
+    </script>
+</head>
+<body>
+    <h3 id="info"></h3>
+    <script>
+        let attr=`appCodeName : ${navigator.appCodeName}<br>`;
+        attr += `appName : ${navigator.appName}<br>`;
+        attr += `appVersion : ${navigator.appVersion}<br>`;
+        attr += `platform : ${navigator.platform}<br>`;
+        attr += `userAgent : ${navigator.userAgent}<br>`;
+        document.getElementById('info').innerHTML=attr;
+    </script>
+</body>
+</html>

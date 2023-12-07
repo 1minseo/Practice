@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let info=`href : ${location.href}\n`;
+        info += `hostname : ${location.hostname}\n`
+        info += `port : ${location.port}\n`
+        info += `pathname : ${location.pathname}\n`
+
+        alert(info);
+
+        function delayedMove(){
+            setTimeout( () => location.href="https://www.naver.com/", 3000);
+        }
+    </script>
+</head>
+<body style="margin: 50px;">
+    <button onclick="location.href='https://google.com/'">사이트 이동</button>
+    <button onclick="delayedMove()">사이트 지연 이동</button>
+    <button onclick="history.forward()">옆으로</button>
+    <button onclick="history.back()">뒤로</button>
+</body>
+</html>

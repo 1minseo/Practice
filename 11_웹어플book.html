@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #container{
+            margin: 50px auto;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            border:2px double #222;
+            background-color: aliceblue;
+            text-align: center;
+        }
+        h1{margin-top: 80px;}
+        .accent{
+            font-size: 1.8em;
+            font-weight: bold;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>책 읽기</h1>
+        <p><span class="accent" id="result"></span>일 연속으로 책 읽기를 달성했군요.</p>
+        <p>축하합니다!</p>
+    </div>
+    <script>
+        var now=new Date("2023-12-07"); //오늘 날짜를 객체로 지정
+        var firstDay=new Date("2023-10-23"); //시작 날짜를 객체로 지정
+
+        var toNow=now.getTime(); //오늘까지 지난 시간(밀리초)
+        var toFirst=firstDay.getTime(); //첫날까지 지난 시간(밀리초)
+        var passedTime=toNow-toFirst; //첫날부터 오늘까지 지난 시간(밀리초)
+
+        passedTime=Math.round(passedTime/(1000*60*60*24));
+        document.querySelector('#result').innerHTML=passedTime;
+    </script>
+</body>
+</html>
