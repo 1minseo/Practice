@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body style="margin: 40px;">
+    <h1> Header1 </h1>
+    <h1 class="header1"> Header1 </h1>
+    <h1 id="header1"> Header1 </h1>
+    <h1 class="header1"> Header1 </h1>
+    <button onclick="handler()"> Go! </button>
+    <script>
+        function handler(){
+            document.querySelector('h1').style.backgroundColor='yellow';
+
+            let h1Array=document.querySelectorAll('h1');
+            for(let h1 of h1Array)
+                h1.style.color='blue';
+            let header1Array=document.querySelectorAll('.header1');
+            for(let h1 of header1Array){
+                h1.style.backgroundColor='orange';
+            }
+            document.querySelector('#Header1').innerHTML='From Javascript';
+        }
+    </script>
+</body>
+</html>

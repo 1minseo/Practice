@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function btn2click(){
+            alert('2번버튼 클릭');
+        }
+
+        window.onload=function(){
+            const button3=document.getElementById('button3');
+            button3.onclick=function(){
+                alert('3번버튼 클릭');
+            }
+            const button4=document.getElementById('button4');
+            button4.addEventListener('click', ()=> alert('4번버튼 클릭'));
+            button4.addEventListener('mouseover',()=>{
+                const h3=document.createElement('h3');
+                const testNode=document.createAttribute('마우스오버 이벤트발생');
+                h3.appendChild(testNode);
+                document.body.appendChild(h3);
+            })
+            button4.addEventListener('mouseout', ()=>{
+                const h3=document.querySelector('h3');
+                document.body.removeChild(h3);
+            });
+
+        const button5=document.getElementById('button5');
+        button5.addEventListener('mouseover', () => {
+            const img=document.createElement('img');
+            img.src='forest1.jpg';
+            img.width=480;
+            img.style.margin='50px';
+            document.body.appendChild(img);
+        })
+        button5.addEventListener('mouseout',() => {
+            const img=document.querySelector('img');
+            document.body.removeChild(img);
+        });
+
+        const button6=document.getElementById('button6');
+        button6.addEventListener('click',() => {
+            alert("a태그의 기본 이벤트 처리를 못하게 하였음");
+            const a=document.querySelector('a');
+            a.onclick=function(){
+                return false;
+        }
+            })
+        }        
+    </script>
+</head>
+<body style="margin: 40px;">
+    <button onclick="alert('1번버튼 클릭')">버튼1</button><br>
+    <button onclick="btn2click()">버튼2</button><br>
+    <button id="button3">버튼3</button><br> 
+    <button id="button4">버튼4</button><br>
+    <button id="button5">버튼5</button><br>
+    <button id="button6">버튼6</button><br>
+    <a href="https://www.hanbit.co.kr">한빛아카데미</a>
+</body>
+</html>

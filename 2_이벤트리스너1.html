@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #container{
+            width: 300px;
+            margin: 10px auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <img src="img/easys-1.jpg" id="cover">
+    </div>
+    <script>
+        var cover=document.getElementById("cover");
+        cover.addEventListener('mouseover', changePic);
+        cover.addEventListener('mouseout', originPic);
+
+        function changePic(){
+            cover.src="img/easys-2.jpg";
+        }
+        function originPic(){
+            cover.src="img/easys-1.jpg";
+        }
+    </script>
+</body>
+</html>
